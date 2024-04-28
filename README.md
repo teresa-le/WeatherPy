@@ -22,4 +22,10 @@ Afterward, I configured a new map using GeoViews to display the four cities in t
 
 From the JSON response obtained, I stored the route's legs coordinates in a variable called legs. I then looped through these coordinates to fetch latitude and longitude for each step, storing them in Python lists named longitude and latitude. Using these lists, I created a new DataFrame named route_df.
 
-Finally, I configured a line plot using GeoViews' Path function with the route_df DataFrame. The route path was styled with a custom color and width to contrast with the map. The composed plot displayed the itinerary's route over the map containing the cities.
+Finally, I configured a line plot using GeoViews' Path to display the itinerary's route over the map containing the cities.
+
+
+## Results 
+This project generates a travel itinerary map, highlighting a route connecting four cities in the same country. The map displays the selected cities as points, with the travel route represented as a line plot overlaid on top. This visualization provides valuable insights into the planned travel itinerary, aiding in trip planning and decision-making.
+
+<img src="https://github.com/teresa-le/World_Weather_Analysis/blob/main/Vacation%20Itinerary/WeatherPy_travel_map.PNG"> 
