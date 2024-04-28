@@ -16,6 +16,8 @@ Python, Data Wrangling, Data Visualization, API Interaction and Data Retrieval
 ## Actions 
 In this project, I began by importing the necessary dependencies and configuring the Geoapify API key. Utilizing GeoViews, I created a map displaying all cities from the vacation_df DataFrame. The map was configured to include temperatures, city names and additional information such as hotel names, country, and current weather description.
 
+<img src="https://github.com/teresa-le/World_Weather_Analysis/blob/main/Vacation%20Search/WeatherPy_travel_map.png"> 
+
 Next, I selected four cities in close proximity within the same country from the map and created separate DataFrames for each city using the loc method. These DataFrames represented the starting point, ending point, and two stops along the travel route. Using the Pandas concat function, I merged these DataFrames to create a new DataFrame named itinerary_df to store the itinerary details. I then used the Pandas copy function to create a DataFrame named waypoints_df to store the longitude and latitude for each city in itinerary_df. 
 
 Afterward, I configured a new map using GeoViews to display the four cities in the itinerary. I utilized the Geoapify Routing API to find a route between the cities in the itinerary. This involved setting initial parameters, fetching coordinates from each city, defining the waypoints parameter using a for loop, and making a request to the API to retrieve route directions.
